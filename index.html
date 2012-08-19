@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Batman 1989 - Tim Burton - Logo</title>
+    <style>
+        * { box-sizing: border-box; background-clip: padding-box;}
+        body { background: #efefef;}
+        .logo {
+            border-radius: 50% / 50%;
+            height: 262px;
+            width: 472px;
+            background: yellow;
+            padding: 13px 13px 13px 11px;
+            overflow: hidden;
+            box-shadow: 0px 0px 0px 13px #222;
+            margin: 50px auto;
+
+        }
+        .logo:before {
+            content: "";
+            display: block;
+        }
+
+        .the-bat {
+            border-radius: 50% / 50%;
+            height: 234px;
+            width: 450px;
+            background: #222;
+            margin: 0 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+
+        .bottom-outer:before,
+        .bottom-outer:after {
+            content: "";
+            display: block;
+            background: yellow; 
+            position: absolute;
+            width: 64px;
+            height: 84px;
+            border-radius: 50% / 50%;
+            top: 150px;
+            z-index: 10;
+        }
+
+        .bottom-outer:before {
+            left: 71px;
+            transform: rotate(-35deg);
+        }
+
+        .bottom-outer:after {
+            right: 71px;
+            transform: rotate(35deg);
+        }
+        .bottom-inner:before,
+        .bottom-inner:after {
+            content: "";
+            display: block;
+            background: yellow; 
+            position: absolute;
+            width: 60px;
+            height: 100px;
+            border-radius: 50% / 50%;
+            z-index: 10;
+            top: 147px;
+
+        }
+
+        .bottom-inner:before {
+            left: 133px;
+            transform: rotate(30deg);
+        }
+
+
+        .bottom-inner:after {
+            right: 133px;
+            transform: rotate(-30deg);
+        }
+
+
+        .bottom-center:before,
+        .bottom-center:after {
+            display: block;
+            content: "";
+            background: yellow; 
+            position: absolute;
+            width: 62px;
+            height: 148px;
+            border-radius: 50% / 50%;
+            z-index: 10;
+            top: 150px;
+        }
+
+        .bottom-center:before {
+            left: 163px;
+            transform: rotate(-10deg);
+        }
+        .bottom-center:after {
+            right: 163px;
+            transform: rotate(10deg);
+        }
+
+
+        .top-round:before,
+        .top-round:after {
+            content: "";
+            display: block;
+            background: yellow; 
+            position: absolute;
+            width: 75px;
+            height: 75px;
+            border-radius: 50% / 50%;
+            z-index: 10;
+            top: 3px;
+        }
+
+        .top-round:before {
+            left: 124px;
+            transform: rotate(-10deg);
+        }
+        .top-round:after {
+            right: 125px;
+            transform: rotate(10deg);
+        }
+
+
+        .top-rect:before,
+        .top-rect:after {
+            display: block;
+            content: "";
+            background: yellow; 
+            position: absolute;
+            width: 38px;
+            height: 42px;
+            z-index: 10;
+            top: -2px;
+        }
+
+        .top-rect:before {
+            left: 163px;
+            transform: rotate(5deg);
+        }
+        .top-rect:after {
+            right: 164px;
+            transform: rotate(-5deg);
+        }
+
+        .top-trapeze {
+            position: absolute;
+            top: -10px;
+            left: 208px;
+            width: 33px;
+            height: 81px;
+            -webkit-perspective: 25;
+        }
+        .top-trapeze:after {
+            display: block;
+            content: "";
+            background: yellow;
+            width: 100%;
+            height: 50%;
+            transform-style: preserve-3d;    
+            transform: rotateX(-50deg);
+        }
+    </style>
+    <script src="lib/prefixfree.min.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <div class="the-bat">
+            <div class="top-trapeze"></div>
+            <div class="top-round"></div>
+            <div class="top-rect"></div>
+            <div class="bottom-outer"></div>
+            <div class="bottom-inner"></div>
+            <div class="bottom-center"></div>
+        </div>
+    </div>
+</body>
+</html>
